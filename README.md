@@ -1,7 +1,7 @@
 # What is this?
 
 Its the home of a Mac App you can use to change the icon for certain file extensions.
-It is very much not polished, but it does work.
+It is very much not-polished, but it does work.
 
 # How do I use it?
 
@@ -39,16 +39,17 @@ I don't know ¯\\\_(ツ)_/¯
 I used an applescript file to create a Mac app that opens things. Then I pulled app-settings from an old Sublime app that was already setting the icons for file extensions.
 
 A copy of the applescript code can be found [here](https://github.com/jeff-hykin/mac-icon-changer/blob/master/main.applescript)
-its litterally (exactly)
+its literally (exactly)
 ```applescript
 on open this_item
-	tell application "Visual Studio Code"
-		open this_item
-	end tell
+    tell application "Visual Studio Code"
+        open this_item
+    end tell
 end open
 ```
 
 <br>
 <br>
 
+### How could this be done better?
 Maybe in the future I'll make an electron app that utilizes [file associations](https://www.electron.build/configuration/configuration#PlatformSpecificBuildOptions-fileAssociations) to accomplish this in a user-friendly way
